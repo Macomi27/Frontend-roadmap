@@ -21,3 +21,8 @@ alert(isTeacher);
 
 // The exact location of the modal window is determined by the browser. Usually, it’s in the center.
 // The exact look of the window also depends on the browser. We can’t modify it.
+
+// Exercise - Create a web-page that asks for a name and outputs it.
+
+let newUserName = prompt("Enter your name", "First name");
+alert(`Welcome, ${newUserName}`);
