@@ -41,9 +41,9 @@ alert(null || (2 && 3) || 4); // 3
 if (age >= 14 && age <= 90)
   if (!(age >= 14) && !(age <= 90))
     if (age < 14 && age > 90)
-      //Exercise 7 - Check the range outside
-      // Write an if condition to check that age is NOT between 14 and 90 inclusively.
       if (-1 || 0)
+        //Exercise 7 - Check the range outside
+        // Write an if condition to check that age is NOT between 14 and 90 inclusively.
         //Exercise 8 - A question about "if"
         alert("first"); // 'first
 if (-1 && 0) alert("second"); // empty
@@ -72,3 +72,15 @@ if (login === "" || login === null) {
     alert("Wrong password");
   }
 }
+
+// Nullish coalescing operator '??' - syntax to get the first “defined” value of the two.
+// it treats null and undefined similarly,
+//  a value is “defined” when it’s neither null nor undefined.
+// The result of a ?? b is: === result = (a !== null && a !== undefined) ? a : b;
+// if a is defined, then a,
+// if a isn’t defined, then b.
+// In other words, ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
+
+// The important difference between OR and the nullish coalescing operator is that:
+// || returns the first truthy value.
+// ?? returns the first defined value.
